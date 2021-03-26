@@ -1,18 +1,23 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Bjoern":
+  - firstname: ["Björn", "B.", "B. H.", "Björn Hartmann"]
+    url: http://people.eecs.berkeley.edu/~bjoern/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Cuong":
+  - firstname: ["Cuong", "C.", "C. N.", "Cuong Nguyen"]
+    url: http://www.cuongnd.com/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Steve":
+  - firstname: ["Stephen", "S.", "S. D.", "Stephen DiVerdi"]
+    url: http://www.stephendiverdi.com/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Fraser": 
+  - firstname: ["Fraser", "F.", "F.A.", "Fraser Anderson"]
+    url: http://fraseranderson.ca/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Tovi":
+  - firstname: ["Tovi", "T.", "T. G.", "Tovi Grossman"]
+    url: https://www.tovigrossman.com/
+
+"George":
+  - firstname: ["George", "G.", "G. F.", "George Fitzmaurice"]
+    url: https://www.autodeskresearch.com/people/george-fitzmaurice

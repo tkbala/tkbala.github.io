@@ -2,23 +2,19 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: Doctoral Candidate, Dept. of EECS, UC Berkeley
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  align: justify
+  image: prof_pic.jpeg
+  address: 
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+Hi, I am Bala! I am a 4th year PhD student at the University of California, Berkeley. I am advised by professor Björn Hartmann. I completed my Bachelors at Indian Institute of Technology, Madras. My Bachelors' thesis - "IoT enabled CNC Milling machine" won the best interdisciplinary thesis project amongst all engineering departments and the best thesis in Mechanical engineering.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research interests are primarily in the domain of Virtual/Augmented reality. With AR/VR set to enter and modify out homes, cities, workspaces and daily lives in unimaginable ways, my research hopes to address the new challenges and problems that would arise in these scenarios. My research explores the applications and usages of AR/VR for a diverse set of activities, such as interacting with robots, creating art forms, 3D designing workflows, Augmented Reality teleoperative support for maintenance and Enhancing learning using AR/VR. You can also contact me at bala@eecs.berkeley.edu
+ 
+Over the summer of 2020, I will be interning at Microsoft Research, mentored by [Andy Wilson](https://www.microsoft.com/en-us/research/people/awilson/). In the past I have interned at Adobe Research (San Francisco) and Autodesk Research (Toronto), and have gotten a chance to work with amazing mentors and collaborators: [Cuong Nguyen](http://www.cuongnd.com/), [Stephen DiVerdi](http://www.stephendiverdi.com/), [Fraser Anderson](http://fraseranderson.ca/), [Tovi Grossman](https://www.tovigrossman.com/), [George Fitzmaurice](https://www.autodeskresearch.com/people/george-fitzmaurice).
