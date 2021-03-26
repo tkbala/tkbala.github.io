@@ -13,7 +13,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Hi, I am Bala! I am a 4th year PhD student at the University of California, Berkeley. I am advised by professor Björn Hartmann. I completed my Bachelors at Indian Institute of Technology, Madras. My Bachelors' thesis - "IoT enabled CNC Milling machine" won the best interdisciplinary thesis project amongst all engineering departments and the best thesis in Mechanical engineering.
+Hi, I am Bala! I am a 4th year PhD student at the University of California, Berkeley. I am advised by professor Björn Hartmann. I completed my Bachelors at Indian Institute of Technology, Madras. 
 
 My research interests are primarily in the domain of Virtual/Augmented reality. With AR/VR set to enter and modify out homes, cities, workspaces and daily lives in unimaginable ways, my research hopes to address the new challenges and problems that would arise in these scenarios. My research explores the applications and usages of AR/VR for a diverse set of activities, such as interacting with robots, creating art forms, 3D designing workflows, Augmented Reality teleoperative support for maintenance and Enhancing learning using AR/VR. You can also contact me at bala@eecs.berkeley.edu
  
