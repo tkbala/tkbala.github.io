@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://tkbala.github.io/al-folio/sitemap.xml
+Sitemap: https://tkbala.github.io/tkbala.github.io//sitemap.xml
