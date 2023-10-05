@@ -5,7 +5,7 @@ permalink: /projects/
 description: 
 nav: true
 nav_order: 2
-display_categories: [work, fun, Mixed Reality, Adaptive Interfaces, Internet of Things]
+display_categories: [Mixed Reality, Adaptive Interfaces, Internet of Things]
 horizontal: false
 ---
 
