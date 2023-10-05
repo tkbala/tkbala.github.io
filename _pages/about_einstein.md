@@ -1,5 +1,3 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Senior Researcher at Microsoft Research. I work on leveraging Generative AI models (LLMs and Diffusion models) to enhance user productivity and collaboration in business-critical applications. I am particularly interested in customizing, finetuning, and aligning generative AI models for specific end-user applications.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before joining Microsoft, I completed my Ph.D. at the University of California, Berkeley in the Summer of 2022, where I was advised by Prof. Björn Hartmann. My research at Berkeley was concentrated in the domains of Virtual and Augmented Reality, exploring applications in diverse activities, from AR/VR-assisted robotics interactions to enhancing learning experiences.
