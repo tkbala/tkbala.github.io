@@ -1,34 +1,131 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Lyu":
+  - firstname: ["Haohua"]
+    url: https://www.haohualyu.com/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Vachha":
+  - firstname: ["Cyrus"]
+    url: https://www.linkedin.com/in/cyrus-vachha-35765a7a/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Chen":
+  - firstname: ["Qianyi", "Daisy"]
+    url: https://www.qianyichen.com/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Pyrinis": 
+  - firstname: ["Odysseus"]
+    url: https://www.linkedin.com/in/odysseus-pyrinis-91503791/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Liou":
+  - firstname: ["Avery"]
+    url: https://www.linkedin.com/in/avery-liou-0a0734180/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Hartmann":
+  - firstname: ["Bjoern", "Bj{\"o}rn"]
+    url: http://people.eecs.berkeley.edu/~bjoern/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Pant":
+  - firstname: ["Yash Vardhan"]
+    url: https://yashpant.github.io/
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Shah":
+  - firstname: ["Ameesh"]
+    url: https://ameesh-shah.github.io/
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Kraemer":
+  - firstname: ["Erin"]
+    url: http://www.erinkraemer.com/
+  
+"Vazquez-Chanlatte":
+  - firstname: ["Marcell"]
+    url: https://mjvc.me/
+
+"Seshia":
+  - firstname: ["Sanjit", "Sanjit A"]
+    url: http://people.eecs.berkeley.edu/~sseshia/
+
+"Wilson":
+  - firstname: ["Andy", "Andrew D", "Andy D"]
+    url: https://www.microsoft.com/en-us/research/people/awilson/
+
+"Kulkarni":
+  - firstname: ["Kshitij", "K"]
+    url: https://people.eecs.berkeley.edu/~ksk/
+    
+"Bhattacharyya":
+  - firstname: ["Rahul"]
+    url: http://web.mit.edu/rahul_b/www/
+
+"Siegel":
+  - firstname: ["Joshua"]
+    url: https://deeptech.egr.msu.edu/
+
+"Narayanan":
+  - firstname: ["Arunachalam"]
+    url: https://www.iitm.ac.in 
+
+"Arunachalam":
+  - firstname: ["Narayanan"]
+    url: https://www.iitm.ac.in 
+
+"Sarma":
+  - firstname: ["Sanjay"]
+    url: https://meche.mit.edu/people/faculty/sesarma%40mit.edu
+
+"Claudino Daffara":
+  - firstname: ["Stephanie"]
+    url: https://www.linkedin.com/in/stecd/ 
+
+"Daffara":
+  - firstname: ["Stephanie Claudino"]
+    url: https://www.linkedin.com/in/stecd/ 
+
+"Brewer":
+  - firstname: ["Anna"]
+    url: https://www.linkedin.com/in/annabrwr/
+
+"Saldarini":
+  - firstname: ["Federico"]
+    url: https://www.linkedin.com/in/federicosaldarini/
+
+"Nguyen":
+  - firstname: ["Cuong"]
+    url: http://www.cuongnd.com/
+
+"DiVerdi":
+  - firstname: ["Stephen"]
+    url: http://www.stephendiverdi.com/
+
+"Anderson":
+  - firstname: ["Fraser"]
+    url: http://fraseranderson.ca/
+
+"Fitzmaurice":
+  - firstname: ["George"]
+    url: https://www.research.autodesk.com/people/george-fitzmaurice/
+
+"Grossman":
+  - firstname: ["Tovi"]
+    url: https://www.tovigrossman.com/
+
+"Wright":
+  - firstname: ["PK"]
+    url: https://me.berkeley.edu/people/paul-k-wright/
+
+"Evans":
+  - firstname: ["JW"]
+    url: https://mse.berkeley.edu/people_new/evans/
+
+"Yeatman":
+  - firstname: ["EM"]
+    url: https://www.imperial.ac.uk/people/e.yeatman
+
+"Boyle":
+  - firstname: ["DE"]
+    url: https://www.imperial.ac.uk/people/david.boyle
+
+"Kiziroglou":
+  - firstname: ["ME"]
+    url: https://www.imperial.ac.uk/people/m.kiziroglou
+
+"Cowell":
+  - firstname: ["Martin"]
+    url: https://www.linkedin.com/in/martin-cowell/
