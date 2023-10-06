@@ -1,5 +1,28 @@
 {%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
 
+<!-- Code for SD Avatars -->
+<script>
+  const images = [
+      { src: '/assets/img/avatars/bala_1.png', caption: 'Caption 1' },
+      { src: '/assets/img/avatars/bala_2.png', caption: 'Caption 2' },
+      { src: '/assets/img/avatars/bala_3.png', caption: 'Caption 3' },
+  ];
+
+  function showRandomImage(imgElement, captionElement) {
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    
+    imgElement.src = randomImage.src;
+    if (captionElement) {
+        captionElement.textContent = randomImage.caption;
+    }
+}
+
+function showFixedImage(imgElement, originalSrc) {
+    imgElement.src = originalSrc;
+}
+</script>
+<!-- End of code for SD avatars -->
+
 <figure>
 
   <picture>
@@ -26,8 +49,13 @@
       {% if include.alt %}alt="{{ include.alt }}"{% endif %}
       {% if include.title %}title="{{ include.title }}"{% endif %}
       {% if include.zoomable %}data-zoomable{% endif %}
+      onmouseover="showRandomImage(this, document.querySelector('.caption'))"
+      onmouseout="showFixedImage(this, '{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}')"
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     />
+    
+    
+
   </picture>
 
   {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}

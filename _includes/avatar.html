@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image on Hover</title>
+    <style>
+        #imageContainer {
+            width: 300px;
+            height: 300px;
+            background-image: url('/assets/img/prof_pic.png');
+            background-size: cover;
+        }
+        #caption {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="imageContainer" onmouseover="showRandomImage()" onmouseout="showFixedImage()"></div>
+    <div id="caption"></div>
+
+    <script>
+        const images = [
+            { src: '/assets/img/avatars/bala_1.png', caption: 'Caption 1' },
+            { src: '/assets/img/avatars/bala_2.png', caption: 'Caption 2' },
+            { src: '/assets/img/avatars/bala_3.png', caption: 'Caption 3' },
+        ];
+
+        function showRandomImage() {
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            const imageContainer = document.getElementById('imageContainer');
+            const caption = document.getElementById('caption');
+            
+            imageContainer.style.backgroundImage = `url('${randomImage.src}')`;
+            caption.innerHTML = randomImage.caption;
+            caption.style.display = 'block';
+        }
+
+        function showFixedImage() {
+            const imageContainer = document.getElementById('imageContainer');
+            const caption = document.getElementById('caption');
+            
+            imageContainer.style.backgroundImage = `url('/assets/img/prof_pic.png')`;
+            caption.style.display = 'none';
+        }
+    </script>
+
+    
+</body>
+</html>
