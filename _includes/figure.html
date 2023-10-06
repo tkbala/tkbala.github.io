@@ -37,6 +37,7 @@ function showFixedImage(imgElement, originalSrc) {
     {% endif %}
 
     <!-- Fallback to the original file -->
+
     <img
       src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
       {% if include.class %}class="{{ include.class }}"{% endif %}
@@ -49,8 +50,10 @@ function showFixedImage(imgElement, originalSrc) {
       {% if include.alt %}alt="{{ include.alt }}"{% endif %}
       {% if include.title %}title="{{ include.title }}"{% endif %}
       {% if include.zoomable %}data-zoomable{% endif %}
+      {% if include.avatar %}
       onmouseover="showRandomImage(this, document.querySelector('.caption'))"
       onmouseout="showFixedImage(this, '{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}')"
+      {% endif %}
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     />
     
