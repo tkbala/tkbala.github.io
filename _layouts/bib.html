@@ -1,6 +1,11 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+<!-- <script>
+  console.log("{{page.related_publications}}")
+</script> -->
+{%- if entry.hide == false or entry.hide == nil or page.is_project == "true" or page.related_publications != nil -%}
+
       <div class="row">
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
@@ -232,3 +237,4 @@
           {%- endif %}
         </div>
       </div>
+{%- endif -%}
