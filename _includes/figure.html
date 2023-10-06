@@ -1,29 +1,109 @@
 {%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" -%}
 
 <!-- Code for SD Avatars -->
+<style>
+  .figure-avatar {
+      position: relative;
+      height: 288px; /* replace [Your Original Image Height] with the height of the original image */
+  }
+  
+  .figure-avatar img {
+      display: block;
+      margin: 0 auto; /* to center the image */
+  }
+  
+  .figure-avatar .caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+  }
+  .avatar-div {
+    display: flex;
+  }
+  
+  .avatar-div span {
+    align-self: flex-end;
+  }
+  </style>
+  
 <script>
-  const images = [
-      { src: '/assets/img/avatars/bala_1.png', caption: 'Caption 1' },
-      { src: '/assets/img/avatars/bala_2.png', caption: 'Caption 2' },
-      { src: '/assets/img/avatars/bala_3.png', caption: 'Caption 3' },
-  ];
-
-  function showRandomImage(imgElement, captionElement) {
-    const randomImage = images[Math.floor(Math.random() * images.length)];
+  var jsonData = '{{ site.data.avatars | jsonify }}'; 
+  var avatar_images = JSON.parse(jsonData);
     
-    imgElement.src = randomImage.src;
+
+ // New code: Add history array and n value
+ var avatar_history = [];
+ 
+
+ function getRandomImageNotInHistory() {
+   // Number of recent images to avoid
+  let filteredImages = avatar_images.filter(img => avatar_history.indexOf(img.src) === -1);
+
+   // If all images have been shown in the last n, reset the history
+   if (filteredImages.length === 0) {
+    avatar_history = [];
+       filteredImages = avatar_images;
+   }
+
+   return filteredImages[Math.floor(Math.random() * filteredImages.length)];
+ }
+
+ function showRandomImage(figureElement) {
+  var n_history = 16; 
+  let filteredImages = avatar_images.filter(img => avatar_history.indexOf(img.src) === -1);
+  
+  if (filteredImages.length == 0) {
+    avatar_history = []; // reset history if we've gone through all images
+      filteredImages = avatar_images; 
+  }
+  
+  const randomIndex = Math.floor(Math.random() * filteredImages.length);
+  const randomImage = filteredImages[randomIndex];
+  const imgElement = figureElement.querySelector('img');
+  const captionElement = figureElement.querySelector('.caption');
+  
+  imgElement.src = randomImage.src;
+  console.log(randomImage.src);
+  
+  if (captionElement) {
+      captionElement.textContent = randomImage.caption;
+  }
+  
+  // Update the history
+  avatar_history.push(randomImage.src);
+  if (avatar_history.length > n_history) {
+    avatar_history.shift();  // remove the oldest item
+  }
+}
+
+function showFixedImage(figureElement, originalSrc, originalCaption) {
+    const imgElement = figureElement.querySelector('img');
+    const captionElement = figureElement.querySelector('.caption');
+
+    imgElement.src = originalSrc;
     if (captionElement) {
-        captionElement.textContent = randomImage.caption;
+        captionElement.textContent = originalCaption;
+        //captionElement.innerHTML = originalCaption;
     }
 }
 
-function showFixedImage(imgElement, originalSrc) {
-    imgElement.src = originalSrc;
+function restoreOriginalCaption(imgElement, originalCaption) {
+  const captionElement = document.querySelector('.caption');
+  if (captionElement) {
+      captionElement.textContent = originalCaption;
+      //captionElement.innerHTML = originalCaption;
+  }
 }
+
 </script>
 <!-- End of code for SD avatars -->
 
-<figure>
+<figure 
+    {% if include.avatar %}class="figure-avatar"
+    onmouseenter="showRandomImage(this)"
+    onmouseleave="showFixedImage(this, '{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}', '{% if include.caption %}{{ include.caption }}{% endif %}')"{% endif %}
+>
 
   <picture>
     {% if site.imagemagick.enabled %}
@@ -50,17 +130,22 @@ function showFixedImage(imgElement, originalSrc) {
       {% if include.alt %}alt="{{ include.alt }}"{% endif %}
       {% if include.title %}title="{{ include.title }}"{% endif %}
       {% if include.zoomable %}data-zoomable{% endif %}
-      {% if include.avatar %}
-      onmouseover="showRandomImage(this, document.querySelector('.caption'))"
-      onmouseout="showFixedImage(this, '{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}')"
-      {% endif %}
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     />
     
     
 
   </picture>
-
-  {%- if include.caption -%}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
+  
+  {%- if include.caption- %}<figcaption class="caption">{{ include.caption }}</figcaption>{%- endif %}
+  {%- if include.avatar -%}
+  <div class="avatar-div">
+    <b>
+    <span class="caption">
+      {{ include.caption }}
+    </span>
+  </b>
+    </div>
+  {%- endif %}
 
 </figure>
