@@ -4,7 +4,7 @@
 <style>
   .figure-avatar {
       position: relative;
-      height: 288px; /* replace [Your Original Image Height] with the height of the original image */
+      height: auto; /* replace [Your Original Image Height] with the height of the original image */
   }
   
   .figure-avatar img {
@@ -100,10 +100,29 @@ function restoreOriginalCaption(imgElement, originalCaption) {
 <!-- End of code for SD avatars -->
 
 <figure 
-    {% if include.avatar %}class="figure-avatar"
+    {% if include.avatar %}
+    class="figure-avatar"
+    id="avatarFigureId"
     onmouseenter="showRandomImage(this)"
-    onmouseleave="showFixedImage(this, '{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}', '{% if include.caption %}{{ include.caption }}{% endif %}')"{% endif %}
+    onmouseleave="showFixedImage(this, '{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}', '{% if include.caption %}{{ include.caption }}{% endif %}')"
+    {% endif %}
 >
+
+{% if include.avatar %}
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+  const figureElement = document.getElementById("avatarFigureId");
+  const imgElement = figureElement.querySelector('img');
+    
+    imgElement.onload = function() {
+        const imgHeight = this.clientHeight;
+        console.log(imgHeight);
+        figureElement.style.height = imgHeight + 'px';
+        this.onload = null;
+    }
+});
+</script>
+{%endif%}
 
   <picture>
     {% if site.imagemagick.enabled %}
