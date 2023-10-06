@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started working as Senior Researcher at the Extended, Perception, Interaction and Cognition (EPIC) team at Microsoft Research, Redmond 
+Started working as Senior Researcher at the Extended, Perception, Interaction and Cognition (EPIC) team at Microsoft Research, Redmond
