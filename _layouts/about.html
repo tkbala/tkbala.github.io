@@ -59,6 +59,37 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
+          <!-- Collaborator -->
+          <h2>Mentoring</h2>
+          <section id="mentees-section">
+        <style>
+          .mentee-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            width: 75%;  /* sets the width to a quarter of the parent container */
+        }
+        
+        .mentee-name {
+            text-align: left;
+            flex-grow: 1;
+        }
+        
+        .mentee-year {
+            text-align: right;
+        }
+        </style>
+        {% for mentee in site.data.team.mentees %}
+        <div class="mentee-container">
+            <span class="mentee-name">
+                <a href="{{ mentee.link }}">{{ mentee.name }}</a> ({{ mentee.affiliation }})
+            </span>
+            <span class="mentee-year" style="color: grey;">{{ mentee.year }}</span>
+        </div>
+    {% endfor %}
+        </section>
+          
+
           <!-- Social -->
           {%- if page.social %}
             <div class="social">
