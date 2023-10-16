@@ -21,8 +21,8 @@ Before joining Microsoft, I completed my Ph.D. at the University of California, 
 
 During my PhD I got to intern at various places and work with amazing collaborators across Microsoft, Adobe and Autodesk - <a href="http://www.cuongnd.com/"> Cuong Nguyen </a>, <a href="http://www.stephendiverdi.com/"> Stephen DiVerdi </a>, <a href="http://fraseranderson.ca/"> Fraser Anderson </a>, <a href="https://www.tovigrossman.com/"> Tovi Grossman </a>, <a href="https://www.autodeskresearch.com/people/george-fitzmaurice"> George Fitzmaurice </a>, and <a href="https://www.microsoft.com/en-us/research/people/awilson/"> Andy Wilson </a>
 
-<!-- <h6>
+<h6>
 <b> 
 Our team is hiring interns for Summer 2024 - Feel free to reach out to me at <a href = "mailto: bala.kumaravel@microsoft.com"> bala.kumaravel@microsoft.com </a>
 </b>
-</h6> -->
+</h6>
