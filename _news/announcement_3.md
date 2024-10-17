@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started working as Senior Researcher at the Interactive Multimodal AI Systems team at Microsoft Research, Redmond
+Transferred to the Interactive Multimodal AI Systems team at Microsoft Research, Redmond
