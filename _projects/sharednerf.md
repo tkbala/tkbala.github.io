@@ -21,5 +21,5 @@ Collaborating around physical objects necessitates examining different aspects o
 ACM-DL: [https://dl.acm.org/doi/10.1145/3613904.3642945](dl.acm.org/doi/10.1145/3613904.3642945)
 ------------------
 <b> Project video </b>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wQqJHcrOado" title="SpaceBlender" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M6UB_7Cp9Lc" title="SharedNeRF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ------------------
