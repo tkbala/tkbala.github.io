@@ -129,3 +129,19 @@
 "Cowell":
   - firstname: ["Martin"]
     url: https://www.linkedin.com/in/martin-cowell/
+
+"Rajaram":
+  - firstname: ["Shwetha"]
+    url: https://shwetharajaram.github.io/
+
+"Numan":
+  - firstname: ["Nels"]
+    url: https://nels.dev/
+
+"Marquardt":
+  - firstname: ["Nic"]
+  - url: http://www.nicolaimarquardt.com/
+
+"Sakashita":
+  - firstname: ["Mose"]
+    url: https://mosesakashita.me/

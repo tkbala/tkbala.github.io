@@ -1,18 +1,30 @@
 mentees:
+  - name: Sahithya Ravi
+    year: 2024
+    affiliation: PhD Student, UBC Vancouver
+    link: https://sahithyaravi.github.io/
+  - name: Gabriel Sarch
+    year: 2024
+    affiliation: PhD Student, Carnegie Mellon University
+    link: https://gabesarch.me/
+  - name: Jialu Gao
+    year: 2024
+    affiliation: Masters Student, Carnegie Mellon University
+    link: https://gaojl19.github.io/
   - name: Cyrus Vaccha
-    year: Summer' 23
+    year: 2023
     affiliation: Masters Student, UC Berkeley
     link: https://www.linkedin.com/in/cyrus-vachha-35765a7a/
   - name: Mose Sakashita
-    year: Summer' 23
+    year: 2023
     affiliation: PhD Student, Cornell
     link: https://infosci.cornell.edu/~mose/
   - name: Nels Numan
-    year: Summer' 23
+    year: 2023
     affiliation: PhD Student, UCL
     link: https://nels.dev/
   - name: Shwetha Rajaram
-    year: Summer' 23
+    year: 2023
     affiliation: PhD Student, UMich
     link: https://shwetharajaram.github.io/
   - name: Stephanie Claudino Daffara
