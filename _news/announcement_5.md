@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We presented our work on SharedNeRF at CHI 2024. SharedNeRF won a Honorable Mention Award at CHI 2024.
+We presented our work on SharedNeRF at CHI 2024. SharedNeRF won a Honorable Mention Award at CHI 2024. Check out the work at [SharedNeRF](https://www.tkbala.com/projects/sharednerf/).

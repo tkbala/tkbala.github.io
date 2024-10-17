@@ -17,7 +17,7 @@ Today’s video-conferencing tools support a rich range of professional and soci
 ACM-DL: [https://dl.acm.org/doi/10.1145/3654777.3676361](https://dl.acm.org/doi/10.1145/3654777.3676361)
 ArXiv: [https://arxiv.org/abs/2409.13926](https://arxiv.org/abs/2409.13926)
 ------------------
-<img src="assets/img/publication_preview/spaceblender.jpg" width="50%">
+<img src="/assets/img/publication_preview/spaceblender.jpg" width="50%"/> 
 Overview of SpaceBlender, a pipeline for blending users' physical surroundings into virtual spaces using generative AI.
 
 ------------------

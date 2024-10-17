@@ -20,7 +20,7 @@ Today’s video-conferencing tools support a rich range of professional and soci
 ACM-DL: [https://dl.acm.org/doi/10.1145/3654777.3676326](https://dl.acm.org/doi/10.1145/3654777.3676326)
 ArXiv: [https://arxiv.org/abs/2403.13947](arxiv.org/abs/2403.13947)
 ------------------
-<img src="assets/img/publication_preview/blendscape.png" width="50%">
+<img src="/assets/img/publication_preview/blendscape.png" width="50%" />
 Overview of BlendScape, a rendering and composition system for end-users to customize video-conference environments by leveraging AI image generation techniques.
 
 ------------------
