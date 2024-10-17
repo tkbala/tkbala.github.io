@@ -26,6 +26,7 @@ ArXiv: [https://arxiv.org/abs/2403.13947](arxiv.org/abs/2403.13947)
 <br>
 
 <img src="/assets/img/publication_preview/blendscape.png" width="50%" />
+<br>
 Overview of BlendScape, a rendering and composition system for end-users to customize video-conference environments by leveraging AI image generation techniques.
 
 <br>
