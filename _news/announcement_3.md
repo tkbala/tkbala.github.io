@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Transferred to the Interactive Multimodal AI Systems team at Microsoft Research, Redmond
+Moved to the Interactive Multimodal AI Systems team at Microsoft Research, Redmond
