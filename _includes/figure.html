@@ -5,12 +5,16 @@
   <style>
     .figure-avatar {
         position: relative;
-        height: auto; /* replace [Your Original Image Height] with the height of the original image */
+        height: auto;
+        min-height: 200px; /* Prevent collapse while loading */
+        overflow: hidden; /* Prevent content overflow */
     }
     
     .figure-avatar img {
         display: block;
         margin: 0 auto; /* to center the image */
+        max-width: 100%;
+        height: auto;
     }
     
     .figure-avatar .caption {
@@ -100,11 +104,28 @@
 
   document.addEventListener("DOMContentLoaded", function(event) { 
     const figureElement = document.getElementById("avatarFigureId");
-    const imgElement = figureElement.querySelector('img');  
-    const imgHeight = imgElement.clientHeight;
-    console.log(imgHeight);
-    figureElement.style.height = imgHeight + 'px';
-          
+    const imgElement = figureElement.querySelector('img');
+    
+    function setFigureHeight() {
+      const imgHeight = imgElement.clientHeight;
+      console.log('Setting figure height:', imgHeight);
+      if (imgHeight > 0) {
+        figureElement.style.height = imgHeight + 'px';
+      }
+    }
+    
+    // Check if image is already loaded (cached)
+    if (imgElement.complete && imgElement.naturalHeight !== 0) {
+      setFigureHeight();
+    } else {
+      // Wait for image to load
+      imgElement.addEventListener('load', setFigureHeight);
+      
+      // Fallback: Also listen for error event
+      imgElement.addEventListener('error', function() {
+        console.error('Failed to load profile image');
+      });
+    }
   });
 
   </script>
